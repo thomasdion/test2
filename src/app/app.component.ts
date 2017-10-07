@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from './hero';
 
-
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['app/app.component.css']
+  styleUrls: ['app/app.component.css'],
 })
 export class AppComponent implements OnInit {
 
