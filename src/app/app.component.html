@@ -1,0 +1,19 @@
+<section>
+
+<h1>Tour Of Heroes</h1>
+<h2>  My heroes</h2>
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero===sHero">
+          <span class="badge">{{ hero.ID }}</span>
+             {{ hero.Name }}
+        </li>
+    </ul>
+    <div *ngIf="sHero">
+        <h2>{{sHero.Name}} details!</h2>
+        <div><label>id: </label>{{sHero.ID}}</div>
+        <div>
+          <label>name: </label>
+          <input [(ngModel)]="sHero.Name" placeholder="name"/>
+        </div>
+      </div>
+</section>
